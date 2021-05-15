@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <fragment
+            android:id="@+id/fragmentRecommend"
+            android:name="com.example.reviewreadurl.FragmentRecommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </fragment>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentHotDeals"
+            android:name="com.example.reviewreadurl.FragmentHotDeal"
+            ></fragment>
+
+        <fragment
+            android:id="@+id/fragmentViewed"
+            android:name="com.example.reviewreadurl.FragmentViewed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </fragment>
+        <fragment
+            android:id="@+id/fragmentOptions"
+            android:name="com.example.reviewreadurl.FragmentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </fragment>
+
+
+    </LinearLayout>
+
+</ScrollView>

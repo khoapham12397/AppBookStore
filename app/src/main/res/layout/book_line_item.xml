@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/imgBookLineItem"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/nameBookLineItem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="name"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:text="author"
+            android:gravity="center_vertical"
+            android:id="@+id/authorBookLineItem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="price"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/priceBookLineItem"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    >
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/categoriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/booksOptionRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/viewMoreOptions"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textFontWeight="2"
+            android:text="View More 7k Products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

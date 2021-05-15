@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/fragmentImage"
+                android:name="com.example.reviewreadurl.FragmentImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </fragment>
+            <LinearLayout
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Name product"
+                    android:id="@+id/nameProduct"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="Price"
+                    android:id="@+id/priceProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="8dp">
+
+            </LinearLayout>
+            <fragment
+                android:name="com.example.reviewreadurl.FragmentRelative"
+                android:id="@+id/relativeProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </fragment>
+            <TableLayout
+
+                android:stretchColumns="*"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow  android:minHeight="30dp" android:background="#ccc">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="Author"/>
+                    <TextView android:text="Yutaka"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:id="@+id/author"
+                        />
+                </TableRow>
+
+                <TableRow android:minHeight="30dp">
+                    <TextView android:layout_gravity="center"
+                        android:text="Pages number"/>
+                    <TextView android:id="@+id/pagesNumber"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+                </TableRow >
+                <TableRow android:background="#ccc"
+
+                    android:minHeight="30dp">
+                    <TextView android:layout_gravity="center"
+                        android:text="Publishment"/>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:id="@+id/publishment"
+                        android:text="publishment"
+                        />
+                </TableRow>
+                <TableRow android:background="#fff" android:minHeight="30dp">
+                    <TextView android:text="Category" android:layout_gravity="center"/>
+                    <TextView android:textAlignment="center" android:layout_gravity="center"
+                        android:id="@+id/category"/>
+                </TableRow>
+                <TableRow android:background="#ccc" android:minHeight="30dp">
+                    <TextView android:text="Vendor" android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:id="@+id/vendor"/>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Description"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+           <TextView
+               android:text="KMP Production"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="bottom"
+        android:id="@+id/buyNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/holo_red_dark">
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Buy Now"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
